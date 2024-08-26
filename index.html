@@ -23,7 +23,9 @@
             extend: {
               colors: {
                 lime: 'rgb(171, 239, 95)',
-                light_lime:'rgba(171, 239, 95, 0.5)'
+                light_lime:'rgba(171, 239, 95, 0.5)',
+                para_deep:'rgb(73, 73, 73)',
+                para_light:'rgb(115, 115, 115)'
               },
               fontFamily:{
                 manrope:'manrope'
@@ -93,7 +95,7 @@
           <div class="sm:w-3/4 mx-auto  flex flex-col justify-between items-center gap-5 sm:gap-6 text-center">
             <img src="./images/banner.png" alt="">
             <h2 class="text-3xl sm:text-5xl font-bold leading-tight">A barn house of this design has a striking appearance</h2>
-            <p>A stunning fusion of rustic charm and modern elegance, this barn house design captivates with its bold lines, expansive windows, and inviting, open spaces.</p>
+            <p class="text-para_deep">A stunning fusion of rustic charm and modern elegance, this barn house design captivates with its bold lines, expansive windows, and inviting, open spaces.</p>
 
             <div>
                 <button class="btn bg-light_lime rounded-3xl md:text-lg flex justify-center items-center max-h-10"><span>View Details</span> 
@@ -102,5 +104,51 @@
           </div>
          </section>
      </header>
+
+     <main>
+        <!-- Gray Section -->
+        <section class="bg-gray-200  relative">
+            <div class="h-16 w-28 absolute top-8  left-20 hidden sm:block"><img src="./images/Vector.png" alt=""></div>
+
+            <!-- About Us Section -->
+             <div class=" py-12 sm:py-20 w-11/12 mx-auto border gap-10 sm:gap-0 border-red-500 flex flex-col sm:flex-row sm:justify-evenly ">
+
+                <!-- About us text  -->
+                <div class="flex flex-col gap-6 sm:w-5/12 w-full sm:pr-10 items-center sm:items-start text-center sm:text-left ">
+
+                    <button class="bg-white h-8 w-32 px-5  rounded-2xl border flex  justify-center items-center">
+                        <i class="fa-solid fa-arrow-right"></i> <span class="text-sm font-semibold">About Us</span></button>
+                        <h2 class="text-2xl sm:text-4xl font-bold">We design thoughtful, <br>liveable spaces</h2>
+                        <p class="text-para_deep text-sm ">Crafting spaces with purpose and comfort, blending style and functionality to create homes that inspire and enhance everyday living.</p>
+
+
+                        <div class="px-10 py-4  rounded-xl bg-white flex gap-8">
+                            <div class="flex flex-col justify-start w-1/4 sm:w-auto sm:justify-center"><img src="./images/commercial.png" alt=""></div>
+                            <div class="flex flex-col gap-2 justify-between">
+                                <h2 class="text-para_deep text-xl font-bold">commercial</h2>
+                                <p class="text-para_light text-sm ">Elevating commercial spaces with innovative design for impactful business environments.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="px-10 py-4  rounded-xl bg-white flex gap-8">
+                            <div class="flex flex-col justify-start w-1/4 sm:w-fit sm:justify-center"><img src="./images/residential.png" alt=""></div>
+                            <div class="flex flex-col gap-2 justify-between">
+                                <h2 class="text-para_deep text-xl font-bold">Residential</h2>
+                                <p class="text-para_light text-sm ">Creating personalized, welcoming homes with elegance and attention to detail</p>
+                            </div>
+                        </div>
+
+                </div>
+
+                <!-- About Us image -->
+                <div class="sm:w-5/12 flex justify-center items-center">
+                    <img class="h-full" src="./images/Rectangle.png" alt="">
+                </div>
+                
+             </div>
+            
+        </section>
+     </main>
 </body>
 </html>
