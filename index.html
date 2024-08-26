@@ -22,15 +22,85 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                lime: 'rgb(171, 239, 95)',
+                light_lime:'rgba(171, 239, 95, 0.5)'
+              },
+              fontFamily:{
+                manrope:'manrope'
               }
             }
           }
         }
       </script>
-
 </head>
-<body>
-    
+<body class="font-manrope border border-red-500 ">
+    <!-- Header Section -->
+     <header class="bg-gradient-to-r from-gray-200 to-white pb-8 sm:pb-14">
+        <!-- Navbar Section -->
+        <nav>
+            <div class="navbar w-11/12 mx-auto py-8  sm:py-10  ">
+                <!-- Navbar start -->
+                <div class="navbar-start flex gap-2">
+                    <i class="text-black text-xl bg-lime h-8 w-8 flex justify-center items-center rounded-full fa-solid fa-arrow-right -rotate-45"></i>
+                  <a class="font-bold text-3xl">Rinterio</a>
+                </div>
+                <!-- Navbar Center -->
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1  text-lg text-[#737373]">
+                      <li><a><span class="text-black font-bold">Home</span></a></li>
+                      <li><a>Service</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <!-- Navbar end -->
+                <div class="navbar-end">
+                    <!-- search,button,cart:  hidden for phone  -->
+                     <div class="hidden sm:flex items-center justify-between gap-5">
+                        <i class="bg-white border border-gray-300 h-10 w-10 flex justify-center items-center text-lg rounded-full fa-solid fa-magnifying-glass"></i>
+                        <i class="bg-white border border-gray-300  h-10 w-10 flex justify-center items-center  text-lg rounded-full fa-solid fa-cart-shopping"></i>
+                        <div>
+                            <button class="btn bg-lime rounded-3xl md:text-lg flex justify-center items-center max-h-10"><span>BooK Consult</span> 
+                                <i class="text-white bg-black h-6 w-6 flex justify-center items-center rounded-full fa-solid fa-arrow-right -rotate-45"></i> </button>
+
+                        </div> 
+                     </div>
+
+                  <!-- dropdown (Dropdown: Block for mobile device otherwise hidden) -->
+                  <div class="dropdown  sm:hidden">
+                    <div tabindex="0" role="button" class=" h-12 w-12 bg-white flex justify-center items-center rounded-full border border-gray-300  lg:hidden">
+                        <i class="text-xl fa-solid fa-bars"></i>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu right-0 menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg text-[#737373]">
+                      <li><a>Home</a></li>
+                      <li><a>Service</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </nav>
+
+
+        <!-- Banner Section -->
+         <section class="w-11/12 mx-auto">
+          <div class="sm:w-3/4 mx-auto  flex flex-col justify-between items-center gap-5 sm:gap-6 text-center">
+            <img src="./images/banner.png" alt="">
+            <h2 class="text-3xl sm:text-5xl font-bold leading-tight">A barn house of this design has a striking appearance</h2>
+            <p>A stunning fusion of rustic charm and modern elegance, this barn house design captivates with its bold lines, expansive windows, and inviting, open spaces.</p>
+
+            <div>
+                <button class="btn bg-light_lime rounded-3xl md:text-lg flex justify-center items-center max-h-10"><span>View Details</span> 
+                    <i class="text-black bg-lime h-6 w-6 flex justify-center items-center rounded-full fa-solid fa-arrow-right -rotate-45"></i> </button>
+            </div> 
+          </div>
+         </section>
+     </header>
 </body>
 </html>
