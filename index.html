@@ -29,7 +29,11 @@
               },
               fontFamily:{
                 manrope:'manrope'
-              }
+              },
+              backgroundImage: {
+                  'Discuss_texture': "url('./image/bg.jpg')"
+                               }
+              
             }
           }
         }
@@ -267,13 +271,71 @@
                     <div class="sm:order-5 order-5   sm:col-span-3  rounded-2xl p-4 border border-gray-200 sm:border-gray-300 bg-white">
                         <img class="w-full h-[250px] sm:h-[150px] object-cover rounded-xl" src="./images/img5.png" alt="">
                     </div>
-                </div>
-                
+                </div>     
+            </div>
+         </section>
 
+         <!-- Discuss Section -->
+         <Section class="   bg-cover bg-center w-full " style="background-image: url('./images/bg.jpg');">
+            <div class="w-11/12 mx-auto  py-8 sm:py-16">
+
+
+                  <!-- Discuss text part -->
+            <div class="w-full sm:w-3/5  mx-auto flex flex-col text-center items-center gap-3 pb-4 sm:pb-6">
+                <div>
+                    <button class="bg-light_lime h-8  px-5  rounded-2xl border flex gap-2 justify-center items-center">
+                        <i class="fa-solid fa-arrow-right"></i> <span class="text-sm font-semibold">Let's Connect</span></button>
+                </div>
+                <h2 class="text-2xl sm:text-4xl font-extrabold">Let’s Discuss Next Project</h2>
+                <p class="text-para_deep text-sm ">"Let’s collaborate on your next project to transform your vision into reality. Together, we'll design a space that perfectly aligns with your goals, style, and functional needs, creating an environment that inspires and elevates every day.</p>
             </div>
 
-         
-         </section>
+            <!--Disucss Input part  -->
+            <div class="w-full mx-auto sm:w-3/4  grid grid-cols-1 sm:grid-cols-2  grid-rows-8  sm:grid-rows-5  sm:gap-5">
+
+                
+                <div >
+                    <input
+                    type="text"
+                    placeholder="First Name*"
+                    class="input input-bordered input-md w-full border-none rounded-3xl text-sm " />
+                </div>
+                <div>
+                    <input
+                    type="text"
+                    placeholder="Last Name*"
+                    class="input input-bordered input-md w-full border-none rounded-3xl text-sm" />
+                </div >
+                <div >
+                    <input
+                    type="text"
+                    placeholder="Phone Number*"
+                    class="input input-bordered input-md w-full border-none rounded-3xl text-sm" />
+                </div>
+                <div >
+                    <input
+                    type="text"
+                    placeholder="Email*"
+                    class="input input-bordered input-md w-full border-none rounded-3xl text-sm" />
+                </div>
+               
+                <div class="row-span-3 sm:col-span-2  ">
+                    <textarea
+                    placeholder="Write your message here"
+                    class="textarea  textarea-lg w-full rounded-3xl border-none h-full"></textarea>  
+                </div>
+
+                <div class="sm:col-span-2 mt-3 sm:mt-0">
+                    <button class="btn bg-lime rounded-3xl md:text-xl font-extrabold flex justify-center items-center w-full"><span>Send Email</span> 
+                        <i class="text-white bg-black h-8 w-8 flex justify-center items-center rounded-full fa-solid fa-arrow-right -rotate-45 text-xl"></i> </button>>
+                </div>
+            </div>
+
+
+
+            </div>
+         </Section>
+
 
      </main>
 </body>
